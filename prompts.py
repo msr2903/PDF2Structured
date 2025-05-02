@@ -116,9 +116,7 @@ Desired JSON Output Structure Example (Hierarchical Items):
         ]
       }
       // ... other income statement items ...
-    ]},
-    {"Balance Sheet": []}, // Placeholder
-    {"Cash Flow": []}      // Placeholder
+    ]}
   ]
 }
 Provide only the final JSON output"""
@@ -200,7 +198,6 @@ Desired JSON Output Structure Example (Hierarchical):
 
 {
   "PT Companyname": [ // Array value for Company Name Key
-    {"Income Statement": []}, // Placeholder
     {"Balance Sheet": [ // Array value for Balance Sheet Key
       { // Asset Object
         "id": "Aset",
@@ -292,8 +289,7 @@ Desired JSON Output Structure Example (Hierarchical):
         "timeSeriesData": [ /* Total Equity figures */ ],
         "children": [ /* Processed Equity line items */ ]
       }
-    ]},
-    {"Cash Flow": []} // Placeholder
+    ]}
   ]
 }
 Provide only the final JSON object output"""
@@ -372,8 +368,6 @@ Desired JSON Output Structure Example (Hierarchical Sections and Items):
 
 {
   "PT ... Tbk": [ // Array value for Company Name Key
-    {"Income Statement": []}, // Placeholder
-    {"Balance Sheet": []},    // Placeholder
     {"Cash Flow Statement": [ // Array value for Cash Flow Key, holding section node objects
       { // Operating Activities Node
         "id": "Arus Kas dari Aktivitas Operasi",
