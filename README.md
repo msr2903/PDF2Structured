@@ -4,7 +4,7 @@ emoji: 📄
 colorFrom: blue
 colorTo: indigo
 sdk: streamlit
-sdk_version: 1.37.1
+sdk_version: 1.45.0
 app_file: streamlit_app.py
 pinned: false
 ---
@@ -17,8 +17,8 @@ This application uses Google's Gemini language models to extract structured info
 * **PDF Upload:** Upload PDF files directly through the web interface.
 * **Gemini Model Selection:** Choose from available Gemini models for extraction.
 * **Prompt Engineering:**
-    * Use predefined prompt templates for common financial statements (Income Statement, Balance Sheet, Cash Flow).
-    * Write or edit custom prompts to specify the desired extraction format and information.
+  * Use predefined prompt templates for common financial statements (Income Statement, Balance Sheet, Cash Flow).
+  * Write or edit custom prompts to specify the desired extraction format and information.
 * **JSON Extraction:** Extracts data from the PDF according to the prompt and returns it in JSON format.
 * **PDF Viewer:** Displays the uploaded PDF alongside the extraction interface.
 * **Download Results:** Download the extracted JSON data.
@@ -32,29 +32,29 @@ This application uses Google's Gemini language models to extract structured info
 
 ## Setup and Usage
 
-1.  **Prerequisites:**
-    * Python 3.x
-    * Required libraries (install using pip): `streamlit`, `google-generativeai`, `streamlit-pdf-viewer` (Note: `streamlit-pdf-viewer` might be the intended library based on usage in `app.py`).
-        ```bash
-        pip install streamlit google-generativeai streamlit-pdf-viewer
-        ```
-2.  **API Key:**
-    * Obtain a Google AI API Key from Google AI Studio.
-    * You can set the API key as an environment variable named `GOOGLE_API_KEY`.
-    * Alternatively, you can enter the API key directly into the application's sidebar.
-3.  **Run the Application:**
-    ```bash
-    streamlit run app.py
-    ```
-4.  **Using the App:**
-    * Open the application in your web browser.
-    * Enter your Google AI API Key in the sidebar if not set as an environment variable.
-    * Select the desired Gemini model from the sidebar.
-    * Upload a PDF file.
-    * Choose a prompt template or write/edit your custom extraction prompt in the text area.
-    * Click the "Extract" button.
-    * The uploaded PDF will be displayed on the left, and the extracted JSON output will appear on the right after processing.
-    * You can download the extracted JSON using the download button.
+1. **Prerequisites:**
+   * Python 3.x
+   * Required libraries (install using pip): `streamlit`, `google-generativeai`, `streamlit-pdf-viewer` (Note: `streamlit-pdf-viewer` might be the intended library based on usage in `app.py`).
+     ```bash
+     pip install streamlit google-generativeai streamlit-pdf-viewer
+     ```
+2. **API Key:**
+   * Obtain a Google AI API Key from Google AI Studio.
+   * You can set the API key as an environment variable named `GOOGLE_API_KEY`.
+   * Alternatively, you can enter the API key directly into the application's sidebar.
+3. **Run the Application:**
+   ```bash
+   streamlit run app.py
+   ```
+4. **Using the App:**
+   * Open the application in your web browser.
+   * Enter your Google AI API Key in the sidebar if not set as an environment variable.
+   * Select the desired Gemini model from the sidebar.
+   * Upload a PDF file.
+   * Choose a prompt template or write/edit your custom extraction prompt in the text area.
+   * Click the "Extract" button.
+   * The uploaded PDF will be displayed on the left, and the extracted JSON output will appear on the right after processing.
+   * You can download the extracted JSON using the download button.
 
 ## Prompt Templates
 
