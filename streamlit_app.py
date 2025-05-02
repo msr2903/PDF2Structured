@@ -109,4 +109,4 @@ if uploaded_file is not None:
                 file_name=f"{uploaded_file.name}.json",
                 mime="application/json"
             )
-            st.code(st.session_state.output_data, language="json", height=1050)
+            st.code(st.session_state.output_data, language="json")
